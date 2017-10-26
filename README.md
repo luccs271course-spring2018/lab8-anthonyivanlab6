@@ -23,4 +23,4 @@
 *(What is the time and (extra) space complexity of each of the `FixedArrayQueue` methods?)*
 
 - Offer, Peek, Poll, isEmpty, Size = O(1)
-- Reallocate, asList = O(n)
+- asList = O(n)

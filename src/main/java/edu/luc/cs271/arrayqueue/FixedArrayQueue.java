@@ -74,21 +74,6 @@ public class FixedArrayQueue<E> implements SimpleQueue<E> {
     return size;
   }
 
-  @SuppressWarnings("unchecked")
-  private void reallocate() {
-    int newCapacity = 2 * capacity;
-    E[] newData = (E[]) new Object[newCapacity];
-    int j = front;
-    for (int i = 0; i < size; i++) {
-      newData[i] = data[j];
-      j = (j + 1) % capacity;
-    }
-    front = 0;
-    rear = size - 1;
-    capacity = newCapacity;
-    data = newData;
-  }
-
   @Override
   public List<E> asList() {
     // TODO implement using an ArrayList preallocated with the right size
