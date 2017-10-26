@@ -4,7 +4,7 @@
 
 *(Why does `FixedArrayQueue` require an explicit constructor?)*
 
-- The size of the ArrayQueue has to be set during creation (as done through the argument).
+- The capacity of the ArrayQueue has to be set during creation (as done through the argument).
 
 **Question 2**
 
